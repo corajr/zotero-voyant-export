@@ -34,5 +34,11 @@ corpus in the default Voyant view.
 This is a work-in-progress. Please see the [initial release project][project]
 for an indication of what has been/will be done.
 
+## License
+
+This work is under the [GNU Affero General Public License v3.0][agpl] for
+compatibility with Zotero.
+
 [local-voyant]: http://docs.voyant-tools.org/resources/run-your-own/voyant-server/
 [project]: https://github.com/corajr/zotero-voyant-export/projects/1
+[agpl]: https://www.gnu.org/licenses/agpl-3.0.en.html
