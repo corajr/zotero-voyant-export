@@ -16,8 +16,9 @@ author, and date.
 ## Installation
 
 Locate your Zotero data directory (gear icon -> "Preferences..." -> "Advanced"
-tab -> "Files and Folders" -> "Show Data Directory" button). Copy the
-`Voyant.js` file into the `translators` directory, inside the data directory.
+tab -> "Files and Folders" -> "Show Data Directory" button). Download the latest
+`Voyant.js` file from the [releases][releases] page, then move it into the
+`translators` directory inside the data directory.
 
 ## Usage
 
@@ -34,11 +35,26 @@ corpus in the default Voyant view.
 This is a work-in-progress. Please see the [initial release project][project]
 for an indication of what has been/will be done.
 
+## Development
+
+Build using [gulp](http://gulpjs.com/):
+
+```
+gulp
+```
+
+Run tests with:
+
+```
+gulp test
+```
+
 ## License
 
 This work is under the [GNU Affero General Public License v3.0][agpl] for
-compatibility with Zotero.
+compatibility with Zotero's licensing.
 
 [local-voyant]: http://docs.voyant-tools.org/resources/run-your-own/voyant-server/
 [project]: https://github.com/corajr/zotero-voyant-export/projects/1
+[releases]: https://github.com/corajr/zotero-voyant-export/releases
 [agpl]: https://www.gnu.org/licenses/agpl-3.0.en.html

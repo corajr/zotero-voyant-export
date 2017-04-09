@@ -1,0 +1,28 @@
+{
+  "name": "zotero-voyant-export",
+  "version": "0.0.1",
+  "description": "Export your Zotero collections to Voyant.",
+  "main": "Voyant.js",
+  "dependencies": {},
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-mocha": "^4.3.0",
+    "gulp-template": "^4.0.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corajr/zotero-voyant-export.git"
+  },
+  "author": "Cora Johnson-Roberson <cora.johnson.roberson@gmail.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/corajr/zotero-voyant-export/issues"
+  },
+  "homepage": "https://github.com/corajr/zotero-voyant-export#readme"
+}

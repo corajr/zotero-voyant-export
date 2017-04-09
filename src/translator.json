@@ -1,0 +1,12 @@
+{
+	"translatorID": "9a648621-c6e3-42e1-9fa9-de4a8a305665",
+	"label": "Voyant",
+	"creator": "Cora Johnson-Roberson",
+	"target": "",
+	"minVersion": "3.0",
+	"maxVersion": "",
+	"priority": 100,
+	"inRepository": false,
+	"translatorType": 2,
+	"lastUpdated": "<%= new Date().toISOString().slice(0, 19).replace('T', ' ') %>"
+}
