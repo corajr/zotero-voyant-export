@@ -1,0 +1,15 @@
+{
+  "title": "Zotero Voyant Export",
+  "name": "zotero-voyant-export",
+  "version": "0.0.1",
+  "description": "Export your Zotero collections to Voyant",
+  "main": "index.js",
+  "author": "Cora Johnson-Roberson",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "AGPL-3.0",
+  "keywords": [
+    "jetpack"
+  ]
+}

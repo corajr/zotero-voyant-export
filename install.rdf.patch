@@ -1,0 +1,16 @@
+--- install.rdf	2017-04-09 17:31:20.000000000 -0400
++++ install.rdf	2017-04-09 17:33:34.000000000 -0400
+@@ -17,6 +17,13 @@
+               <em:maxVersion>*</em:maxVersion>
+ </Description>
+ </em:targetApplication>
++          <em:targetApplication>
++            <Description>
++              <em:id>zotero@chnm.gmu.edu</em:id>
++              <em:minVersion>5.-1</em:minVersion>
++              <em:maxVersion>*</em:maxVersion>
++            </Description>
++          </em:targetApplication>
+ 
+ 
+     </Description>
