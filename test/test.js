@@ -1,8 +1,9 @@
 /* global describe, it, expect */
-/* global generateMODS */
+/* global generateMODS, generateDC */
 
 const item = {
   "title": "Further Chronicles of Avonlea",
+  "libraryKey": "XYZ",
   "creators": [{
     "lastName": "Montgomery",
     "firstName": "Lucy Maud"
@@ -25,5 +26,10 @@ describe("generateMODS", function() {
 });
 
 describe("generateDC", function() {
-  it("produces DC from a Zotero item (Zotero key only)");
+  it("produces DC from a Zotero item (Zotero key only)", function() {
+    var dc = generateDC(item);
+    expect(dc).to.be('<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">' +
+      '<dc:identifier>XYZ</dc:identifier>' +
+      '</oai_dc:dc>');
+  });
 });
