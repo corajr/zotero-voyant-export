@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const template = require('gulp-template');
-const mocha = require('gulp-mocha');
+const mochaPhantomJS = require('gulp-mocha-phantomjs');
 const concat = require('gulp-concat');
 
 gulp.task('json', () =>
@@ -16,8 +16,8 @@ gulp.task('concat', ['json'], () =>
 );
 
 gulp.task('test', () =>
-  gulp.src('./test/test.js')
-  .pipe(mocha())
+  gulp.src('./test/runner.html')
+  .pipe(mochaPhantomJS())
 );
 
 gulp.task('default', ['concat']);
