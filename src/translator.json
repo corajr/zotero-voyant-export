@@ -8,5 +8,6 @@
 	"priority": 100,
 	"inRepository": false,
 	"translatorType": 2,
+  "translatorOptions": {},
 	"lastUpdated": "<%= new Date().toISOString().slice(0, 19).replace('T', ' ') %>"
 }

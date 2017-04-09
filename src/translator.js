@@ -61,10 +61,32 @@ function generateDC(item) {
   return serializer.serializeToString(doc);
 }
 
+function writeStringToFile(dir, fname, str) {
+  var file = dir.clone().append(fname);
+  Zotero.File.putContents(file, str);
+}
+
+function writeToDir(dir, mods, dc, att) {
+  var fileDir = Zotero.File.pathToFile(dir);
+  writeStringToFile(fileDir, "MODS.bin", mods);
+  writeStringToFile(fileDir, "DC.xml", dc);
+  var attFile = fileDir.clone().append("CWRC.bin");
+  att.saveFile(attFile.path);
+}
+
 function doExport() {
+  var i = 0;
   var item;
   while ((item = Zotero.nextItem()) !== null) {
     Zotero.debug(item);
+    var mods = generateMODS(item);
+    var dc = generateDC(item);
+    var att = item.attachments.length ? item.attachments[0] : null;
+    var dir = "doc" + i;
+    if (att) {
+      writeToDir(dir, mods, dc, att);
+      i += 1;
+    }
   }
 }
 

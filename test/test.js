@@ -1,13 +1,20 @@
 /* global describe, it, expect */
 /* global generateMODS, generateDC */
 
+const attachment = {
+  "saveFile": function() {
+    return null;
+  }
+};
+
 const item = {
   "title": "Further Chronicles of Avonlea",
   "libraryKey": "XYZ",
   "creators": [{
     "lastName": "Montgomery",
     "firstName": "Lucy Maud"
-  }]
+  }],
+  "attachments": [attachment]
 };
 
 describe("generateMODS", function() {
