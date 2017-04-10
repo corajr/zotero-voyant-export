@@ -1,4 +1,4 @@
-.PHONY: all xpi test check-env check-jwt-issuer check-jwt-secret
+.PHONY: all xpi test sign check-env check-jwt-issuer check-jwt-secret
 
 SOURCES := $(wildcard *.js) $(wildcard lib/*.js)
 INSTALL_RDF_PATCH := $(abspath install.rdf.patch)
