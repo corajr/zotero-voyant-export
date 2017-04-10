@@ -3,7 +3,7 @@ var utils = require("./lib/utils");
 var ui = require("./lib/ui");
 var zotero = require("./lib/zotero");
 
-var logger = new utils.Logger(utils.getWindow().Zotero);
+var logger = new utils.Logger(zotero.getZotero());
 
 function main(options, callbacks) {
   logger.info("zotero-voyant-export loaded.");
