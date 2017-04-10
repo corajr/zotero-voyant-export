@@ -7,10 +7,14 @@ var {
   setTimeout
 } = require("sdk/timers");
 
+var retries = 0;
+var maxRetries = 5;
 
 function main(options, callbacks) {
   var Zotero = zotero.getZotero();
-  if (!Zotero) { // try again in 1 second
+  if (!Zotero && retries < maxRetries) {
+    // try again in 1 second
+    retries += 1;
     setTimeout(main, 1000);
     return;
   }
