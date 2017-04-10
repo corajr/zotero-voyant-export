@@ -12,7 +12,7 @@ data via Voyant.
 ## Requirements
 
 * [Zotero Standalone 5.0][zot] or higher; note that **the beta will irreversibly
-upgrade your database**, so take care to backup beforehand.
+upgrade your database** (!), so take care to backup beforehand.
 * a collection containing full texts (as PDFs, HTML snapshots, etc.)
 
 ## Installation
