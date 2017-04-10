@@ -1,6 +1,6 @@
-.PHONY: all xpi
+.PHONY: all xpi test
 
-SOURCES := $(wildcard *.js)
+SOURCES := $(wildcard *.js) $(wildcard lib/*.js)
 INSTALL_RDF_PATCH := $(abspath install.rdf.patch)
 
 all: xpi
@@ -15,3 +15,6 @@ zotero-voyant-export.xpi: $(SOURCES) $(INSTALL_RDF_PATCH)
 	(cd /tmp/zotero-voyant-export && unzip /tmp/zotero-voyant-export.xpi && \
 	 patch install.rdf $(INSTALL_RDF_PATCH))
 	(cd /tmp/zotero-voyant-export && zip -r $(abspath $@) .)
+
+test:
+	jpm test -b "/Applications/Nightly.app"
