@@ -49,9 +49,11 @@ $(SIGNED_FILE): $(UNSIGNED_XPI) check-env
 $(UPDATE_RDF): $(SIGNED_FILE)
 	# run twice in case of error?
 	$(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@ || $(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@
+	cp -f $@ /tmp/update.rdf
 
 release: $(SIGNED_FILE) $(UPDATE_RDF)
 	git checkout gh-pages
+	cp -f /tmp/update.rdf ./update.rdf
 	git add update.rdf
 	git commit -m "version $(VERSION)"
 	git push
