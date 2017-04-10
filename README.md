@@ -28,8 +28,9 @@ Right-click on the collection you wish to analyze. Select "Export Collection to
 Voyant..." and choose a save location for the corpus as a zip file.
 
 Upload the resulting zip to [voyant-tools.org](voyant-tools.org) (or
-to [your local Voyant server][local-voyant]. You should be able to see your
-corpus in the default Voyant view.
+to [your local Voyant server][local-voyant] -- for collections larger than a
+handful of documents, you'll probably want to host locally). You should then be
+able to see your corpus in the default Voyant view.
 
 ## Development
 
