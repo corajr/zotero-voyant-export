@@ -14,8 +14,6 @@ all: xpi
 
 xpi: $(UNSIGNED_XPI)
 
-release: $(UPDATE_RDF)
-
 package.json: package.json.template VERSION
 	sed s/VERSION/$(VERSION)/g < $< | sed sXUPDATELINKX$(UPDATELINK)X > $@
 
@@ -50,3 +48,10 @@ $(SIGNED_FILE): $(UNSIGNED_XPI) check-env
 
 $(UPDATE_RDF): $(SIGNED_FILE)
 	$(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@
+
+release: $(SIGNED_FILE) $(UPDATE_RDF)
+	git checkout gh-pages
+	git add update.rdf
+	git commit -m "version $(VERSION)"
+	git push
+	git checkout master
