@@ -9,7 +9,7 @@ const attachment = {
 const item = {
   "title": "Further Chronicles of Avonlea",
   "libraryKey": "XYZ",
-  "creators": [{
+  "getCreators": () => [{
     "lastName": "Montgomery",
     "firstName": "Lucy Maud"
   }],

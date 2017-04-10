@@ -14,7 +14,7 @@ function main(options, callbacks) {
   var Zotero = zotero.getZotero();
   if (!Zotero && retries < maxRetries) {
     // try again with exponential delay
-    setTimeout(main, (2**retries) * 1000);
+    setTimeout(main, (Math.pow(2, retries) * 1000));
     retries += 1;
     return;
   }
