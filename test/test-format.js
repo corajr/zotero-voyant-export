@@ -1,4 +1,7 @@
 var format = require('../lib/format');
+const {
+  resolve
+} = require('sdk/core/promise');
 
 const attachment = {
   "saveFile": function() {
@@ -13,7 +16,7 @@ const item = {
     "lastName": "Montgomery",
     "firstName": "Lucy Maud"
   }],
-  "getBestAttachment": () => attachment
+  "getBestAttachment": resolve(attachment)
 };
 
 exports["test generateMODS produces MODS from a Zotero item (title and author only)"] = function(assert) {
