@@ -47,7 +47,8 @@ $(SIGNED_FILE): $(UNSIGNED_XPI) check-env
 	jpm sign --api-key $(JWT_ISSUER) --api-secret $(JWT_SECRET) --xpi $<
 
 $(UPDATE_RDF): $(SIGNED_FILE)
-	$(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@
+	# run twice in case of error?
+	$(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@ || $(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@
 
 release: $(SIGNED_FILE) $(UPDATE_RDF)
 	git checkout gh-pages
