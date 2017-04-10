@@ -1,6 +1,6 @@
---- install.rdf	2017-04-09 17:31:20.000000000 -0400
-+++ install.rdf	2017-04-09 17:33:34.000000000 -0400
-@@ -17,6 +17,13 @@
+--- install.rdf.orig	2017-04-10 13:31:58.000000000 -0400
++++ install.rdf	2017-04-10 13:31:59.000000000 -0400
+@@ -18,6 +18,13 @@
                <em:maxVersion>*</em:maxVersion>
  </Description>
  </em:targetApplication>

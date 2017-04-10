@@ -8,7 +8,7 @@ all: xpi
 
 xpi: $(UNSIGNED_XPI)
 
-$(UNSIGNED_XPI): $(SOURCES) $(INSTALL_RDF_PATCH)
+$(UNSIGNED_XPI): package.json $(SOURCES) $(INSTALL_RDF_PATCH)
 	rm -f $@
 	jpm xpi --dest-dir /tmp
 	rm -rf /tmp/zotero-voyant-export
