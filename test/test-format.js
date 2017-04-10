@@ -7,13 +7,13 @@ const attachment = {
 };
 
 const item = {
-  "title": "Further Chronicles of Avonlea",
+  "getDisplayTitle": () => "Further Chronicles of Avonlea",
   "libraryKey": "XYZ",
   "getCreators": () => [{
     "lastName": "Montgomery",
     "firstName": "Lucy Maud"
   }],
-  "attachments": [attachment]
+  "getBestAttachment": () => attachment
 };
 
 exports["test generateMODS produces MODS from a Zotero item (title and author only)"] = function(assert) {
