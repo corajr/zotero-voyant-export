@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <rdf:Description rdf:about="urn:mozilla:extension:zotero-voyant-export@corajr.com">
+        <em:updates>
+            <rdf:Seq>
+                <rdf:li>
+                    <rdf:Description>
+                        <em:version>0.0.3</em:version>
+                        <em:targetApplication>
+                            <rdf:Description>
+                                <em:id>zotero@chnm.gmu.edu</em:id>
+                                <em:minVersion>5.-1</em:minVersion>
+                                <em:maxVersion>*</em:maxVersion>
+                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.3/zotero_voyant_export-0.0.3-fx.xpi</em:updateLink>
+                                <em:updateHash>sha1:60a05a6798f249fdc5c96cab7d55b4a839e0d451</em:updateHash>
+                            </rdf:Description>
+                        </em:targetApplication>
+                        <em:targetApplication>
+                            <rdf:Description>
+                                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                                <em:minVersion>38.0a1</em:minVersion>
+                                <em:maxVersion>*</em:maxVersion>
+                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.3/zotero_voyant_export-0.0.3-fx.xpi</em:updateLink>
+                                <em:updateHash>sha1:60a05a6798f249fdc5c96cab7d55b4a839e0d451</em:updateHash>
+                            </rdf:Description>
+                        </em:targetApplication>
+                    </rdf:Description>
+                </rdf:li>
+            </rdf:Seq>
+        </em:updates>
+        <em:signature>
+            MIICEjALBgkqhkiG9w0BAQ0DggIBABAqEeZu18ZzbSYWws00EUp67kazNyItQ52n
+            GeB7010R4E3xPUmf3gBoa61+LRPy4wshzhcWz2GwpyvKyTyL8hJOgBOxhpdbYaSx
+            goE99mjh1Y/qhrnse8B+o/OOJAu3XdZXCRBS0lDNyYLOlYzLq/pndpKddS0mok+e
+            UppnGJQ6uyeyw572vpALAm5LFrUxfa5Vkszl5xM9h3HZTWyJJYzm0ido4uMJj5Mr
+            pRTL29Lwg1dVzJj9fq7HA5izPHNLKhW0S+13pty9yNkWyWGtYr4JJWMc7OovtjKN
+            Go6ybgIS50Bc77oSW6eVqpyEIlUjn4QV0sJlyKscD1RGGYe686b62vsg/8jwFunt
+            6WIzEeOdjUsaZz7XzgF9jqL7dC5Qo4XrVKwECwUZxlZ9ooX6dKUGw6b5ij5tiI5o
+            qn7JUE5XXWhhwD8jyuTlWF2uNjAZgKd2+28eCzNwY9pe/5yHRUOZBrEQiZJp2mvG
+            bEqPyk0YcCCFL4jF2EWIl8cFOko4/6+hDMXC5y9pjl2nEOApc6PvBjMl7S9ornUi
+            0blAFLnfjBtk4Fjo7Kuf3X+vsDssHo5aaalg73/duWxOkqIBsDHGGNoWj5kSuGmm
+            86Gs6/5uQxapqKZRdRS/l0KcqG6ST1e2PhYN3v87w5TtyM/4rexakowSPn61O3S1
+            +0H15GTw
+        </em:signature>
+    </rdf:Description>
+</rdf:RDF>
