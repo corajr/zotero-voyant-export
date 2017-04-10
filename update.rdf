@@ -6,14 +6,14 @@
             <rdf:Seq>
                 <rdf:li>
                     <rdf:Description>
-                        <em:version>0.0.3</em:version>
+                        <em:version>0.0.4</em:version>
                         <em:targetApplication>
                             <rdf:Description>
                                 <em:id>zotero@chnm.gmu.edu</em:id>
                                 <em:minVersion>5.-1</em:minVersion>
                                 <em:maxVersion>*</em:maxVersion>
-                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.3/zotero_voyant_export-0.0.3-fx.xpi</em:updateLink>
-                                <em:updateHash>sha1:60a05a6798f249fdc5c96cab7d55b4a839e0d451</em:updateHash>
+                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.4/zotero_voyant_export-0.0.4-fx.xpi</em:updateLink>
+                                <em:updateHash>sha1:59d3a7088e44e85f336fb14a0505db96f093d0f9</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                         <em:targetApplication>
@@ -21,8 +21,8 @@
                                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                                 <em:minVersion>38.0a1</em:minVersion>
                                 <em:maxVersion>*</em:maxVersion>
-                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.3/zotero_voyant_export-0.0.3-fx.xpi</em:updateLink>
-                                <em:updateHash>sha1:60a05a6798f249fdc5c96cab7d55b4a839e0d451</em:updateHash>
+                                <em:updateLink>https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.4/zotero_voyant_export-0.0.4-fx.xpi</em:updateLink>
+                                <em:updateHash>sha1:59d3a7088e44e85f336fb14a0505db96f093d0f9</em:updateHash>
                             </rdf:Description>
                         </em:targetApplication>
                     </rdf:Description>
@@ -30,18 +30,18 @@
             </rdf:Seq>
         </em:updates>
         <em:signature>
-            MIICEjALBgkqhkiG9w0BAQ0DggIBABAqEeZu18ZzbSYWws00EUp67kazNyItQ52n
-            GeB7010R4E3xPUmf3gBoa61+LRPy4wshzhcWz2GwpyvKyTyL8hJOgBOxhpdbYaSx
-            goE99mjh1Y/qhrnse8B+o/OOJAu3XdZXCRBS0lDNyYLOlYzLq/pndpKddS0mok+e
-            UppnGJQ6uyeyw572vpALAm5LFrUxfa5Vkszl5xM9h3HZTWyJJYzm0ido4uMJj5Mr
-            pRTL29Lwg1dVzJj9fq7HA5izPHNLKhW0S+13pty9yNkWyWGtYr4JJWMc7OovtjKN
-            Go6ybgIS50Bc77oSW6eVqpyEIlUjn4QV0sJlyKscD1RGGYe686b62vsg/8jwFunt
-            6WIzEeOdjUsaZz7XzgF9jqL7dC5Qo4XrVKwECwUZxlZ9ooX6dKUGw6b5ij5tiI5o
-            qn7JUE5XXWhhwD8jyuTlWF2uNjAZgKd2+28eCzNwY9pe/5yHRUOZBrEQiZJp2mvG
-            bEqPyk0YcCCFL4jF2EWIl8cFOko4/6+hDMXC5y9pjl2nEOApc6PvBjMl7S9ornUi
-            0blAFLnfjBtk4Fjo7Kuf3X+vsDssHo5aaalg73/duWxOkqIBsDHGGNoWj5kSuGmm
-            86Gs6/5uQxapqKZRdRS/l0KcqG6ST1e2PhYN3v87w5TtyM/4rexakowSPn61O3S1
-            +0H15GTw
+            MIICEjALBgkqhkiG9w0BAQ0DggIBAI8igRCiau9Em2wZpPZie33vOAFROWhy7+JI
+            rYvt/8Hhnaof7FnN2ikRn9dAtLvtYgy2CqSlgvJN4TyErhadIMNxkUFomzihZGOE
+            f4/kpLMVEmr0OAoIHML1gEvqaZGtgVKdBN+CauFhrFBjsJN5OZ88CSOuPlSo97Xr
+            csvkM2CRoNTf61ilu/uH27KxN4hRLPG3yHl6ywAaHJn1AuS7WT2/Dp+4fLB3T2dp
+            Fy5jSUvf6TPFdvzZfiat0qGhBo/UlWoaYRGMY0ca1w1DTiOIF7TDESzIECF5rmj0
+            ILSrroNJn5IFrLZ1cSc9vMKO8eFy1x0pgKYEvJdTfcgUOTbyuoVf11L9HudCp/lI
+            l8et73ccitCPuBdP5KwP35XjwrDsniMGHg3kDoqd2ZSoDQ5HbDODOeGUo7UIJbsr
+            Wz7DQfdpMEKYICe6ocSm0/LSLG8DtiS0+qvdDjgB1E7/hWN/txY1ZKM00kiPcETx
+            0akkNRCaOsOkDJOrAohe7vHArPwQgmF9hv84+A7xwCWfw3joj++jf+VZfQXjfsiP
+            pI3C0c+2Ar3fi56B8Zn1un9RoXBsUZCxVB0W5IZnDc9a9kniX9lh5BVdy9i+nz9R
+            TRco1AIf2XJl+GHd1ekZx2fWPGqcCBshDk6k+b72Hrfsu0w2ELxK6CNbiWhhOHuF
+            3a0lbobB
         </em:signature>
     </rdf:Description>
 </rdf:RDF>
