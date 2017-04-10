@@ -2,7 +2,7 @@
   "title": "Zotero Voyant Export",
   "name": "zotero-voyant-export",
   "id": "zotero-voyant-export@corajr.com",
-  "version": "0.0.3",
+  "version": "VERSION",
   "description": "Export your Zotero collections to Voyant",
   "main": "index.js",
   "author": "Cora Johnson-Roberson",
@@ -10,7 +10,7 @@
     "firefox": ">=38.0a1"
   },
   "updateURL": "https://corajr.github.io/zotero-voyant-export/update.rdf",
-  "updateLink": "https://github.com/corajr/zotero-voyant-export/releases/download/v0.0.3/zotero_voyant_export-0.0.3-fx.xpi",
+  "updateLink": "UPDATELINK",
   "license": "AGPL-3.0",
   "keywords": [
     "jetpack"

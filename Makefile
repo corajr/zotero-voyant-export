@@ -1,12 +1,23 @@
-.PHONY: all xpi test sign check-env check-jwt-issuer check-jwt-secret
+.PHONY: all release xpi test sign sign-update check-env check-jwt-issuer check-jwt-secret
 
 SOURCES := $(wildcard *.js) $(wildcard lib/*.js)
 INSTALL_RDF_PATCH := $(abspath install.rdf.patch)
 UNSIGNED_XPI := zotero-voyant-export.xpi
+UHURA := uhura
+
+VERSION := $(shell cat VERSION)
+SIGNED_FILE := zotero_voyant_export-$(VERSION)-fx.xpi
+UPDATE_RDF := update.rdf
+UPDATELINK := "https://github.com/corajr/zotero-voyant-export/releases/download/v$(VERSION)/$(SIGNED_FILE)"
 
 all: xpi
 
 xpi: $(UNSIGNED_XPI)
+
+release: $(UPDATE_RDF)
+
+package.json: package.json.template VERSION
+	sed s/VERSION/$(VERSION)/g < $< | sed sXUPDATELINKX$(UPDATELINK)X > $@
 
 $(UNSIGNED_XPI): package.json $(SOURCES) $(INSTALL_RDF_PATCH)
 	rm -f $@
@@ -32,5 +43,10 @@ ifndef JWT_SECRET
 	$(error JWT_SECRET is undefined)
 endif
 
-sign: $(UNSIGNED_XPI) check-env
+sign: $(SIGNED_FILE)
+
+$(SIGNED_FILE): $(UNSIGNED_XPI) check-env
 	jpm sign --api-key $(JWT_ISSUER) --api-secret $(JWT_SECRET) --xpi $<
+
+$(UPDATE_RDF): $(SIGNED_FILE)
+	$(UHURA) -k $(UHURA_PEM_FILE) $(SIGNED_FILE) $(UPDATELINK) > $@

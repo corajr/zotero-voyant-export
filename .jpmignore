@@ -5,3 +5,4 @@ test/
 Makefile
 install.rdf.patch
 *.xpi
+VERSION

@@ -41,7 +41,9 @@ for an indication of what has been/will be done. Help is very welcome!
 Run `make` to create a new XPI.
 
 Signing can be done with `make sign`, if you have the `JWT_ISSUER` and
-`JWT_SECRET` environment variables set.
+`JWT_SECRET` environment variables set. The `update.rdf` will be signed with
+[uhura](http://www.softlights.net/projects/mxtools/) (make sure you have the
+private key file path as `UHURA_PEM_FILE` in your environment).
 
 ### Tests
 
