@@ -40,6 +40,9 @@ for an indication of what has been/will be done. Help is very welcome!
 
 Run `make` to create a new XPI.
 
+Signing can be done with `make sign`, if you have the `JWT_ISSUER` and
+`JWT_SECRET` environment variables set.
+
 ### Tests
 
 Run the tests using Firefox Nightly, e.g.:

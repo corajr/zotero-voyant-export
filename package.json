@@ -8,6 +8,7 @@
   "engines": {
     "firefox": ">=38.0a1"
   },
+  "updateURL": "https://corajr.github.io/zotero-voyant-export/update.rdf",
   "license": "AGPL-3.0",
   "keywords": [
     "jetpack"
