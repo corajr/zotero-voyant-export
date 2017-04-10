@@ -7,11 +7,11 @@ var logger = new utils.Logger(utils.getWindow().Zotero);
 
 function main(options, callbacks) {
   logger.info("zotero-voyant-export loaded.");
-  ui.insertExportButton(zotero.doExport);
+  ui.insertExportMenuItem(zotero.doExport);
 }
 
 function onUnload(reason) {
-  ui.removeExportButton();
+  ui.removeExportMenuItem();
 }
 
 exports.main = main;
