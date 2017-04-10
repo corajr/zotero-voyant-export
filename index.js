@@ -1,19 +1,18 @@
 var self = require("sdk/self");
 var utils = require("./lib/utils");
+var ui = require("./lib/ui");
 var zotero = require("./lib/zotero");
 
-var Zotero = utils.getWindow().Zotero;
-var logger = new utils.Logger(Zotero);
-
-// a dummy function, to show how tests work.
-// to see how to test this function, look at test/test-index.js
-function dummy(text, callback) {
-  callback(text);
-}
+var logger = new utils.Logger(utils.getWindow().Zotero);
 
 function main(options, callbacks) {
-  logger.info("Running");
+  logger.info("zotero-voyant-export loaded.");
+  ui.insertExportButton(zotero.doExport);
 }
 
-exports.dummy = dummy;
+function onUnload(reason) {
+  ui.removeExportButton();
+}
+
 exports.main = main;
+exports.onUnload = onUnload;

@@ -18,7 +18,6 @@ const item = {
 
 exports["test generateMODS produces MODS from a Zotero item (title and author only)"] = function(assert) {
   var mods = format.generateMODS(item);
-  console.log(mods);
   assert.ok(mods === ('<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">' +
     '<titleInfo>' +
