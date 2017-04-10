@@ -8,7 +8,7 @@ UHURA := uhura
 VERSION := $(shell cat VERSION)
 SIGNED_FILE := zotero_voyant_export-$(VERSION)-fx.xpi
 UPDATE_RDF := update.rdf
-UPDATELINK := "https://github.com/corajr/zotero-voyant-export/releases/download/v$(VERSION)/$(SIGNED_FILE)"
+UPDATELINK := https://github.com/corajr/zotero-voyant-export/releases/download/v$(VERSION)/$(SIGNED_FILE)
 
 all: xpi
 
