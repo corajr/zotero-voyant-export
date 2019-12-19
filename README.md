@@ -1,4 +1,12 @@
-# Zotero Voyant Export
+# Zotero Voyant Export [UNMAINTAINED]
+
+I no longer personally get a chance to do research very often, and so haven't
+been able to keep pace with the many changes to Zotero and the Firefox ecosystem.
+
+If someone wants to do something with the code, you have my full blessing. The
+code is under GPL3, aiming to be compatible with Voyant and Zotero's licenses.
+
+<hr>
 
 Export your Zotero collections to Voyant.
 
@@ -58,3 +66,20 @@ jpm test -b /Applications/Nightly.app/
 [zot]: https://forums.zotero.org/discussion/59829/zotero-5.0-beta/
 [release]: https://github.com/corajr/zotero-voyant-export/releases
 [project]: https://github.com/corajr/zotero-voyant-export/projects/1
+
+
+
+## LICENSE
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
